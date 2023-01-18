@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+/* Common class */
+
+.btn {
+    padding: 11.5px 19.5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.checked {
+    color: orange;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.left {
+    align-items: left;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.full,
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-10 {
+    margin: 10px !important;
+}
+
+.mt-16 {
+    margin: 16px 0px !important;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    width: 100%;
+}
+
+/* MAIN CSS */
+
+#header {
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+#header>.nav-btn {
+    display: inline-block;
+}
+
+#header a {
+    color: #fff;
+    padding: 0px 24px;
+    line-height: 46px;
+    text-decoration: none;
+    display: block;
+}
+
+#header .nav-more {
+    position: relative;
+}
+
+#header .nav-more:hover .subnav {
+    display: block;
+}
+
+#header .subnav {
+    position: absolute;
+    min-width: 100px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#header .subnav .nav-btn a {
+    padding: 5px 35px;
+    display: block;
+}
+
+#header>.nav-btn:hover>a,
+#header .subnav .nav-btn:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 20px;
+    color: #fff;
+    height: 46px;
+    line-height: 26px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+
+.text-content {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    bottom: 35px;
+    text-shadow: 0 0 1px #000;
+}
+
+.text-des {
+    margin: 15px 0px;
+    font-weight: 600;
+}
+
+
+.text-content h2 {
+    margin: 10px;
+    font-weight: 400;
+}
+
+.content-section {
+    padding: 64px 16px;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+    max-width: 100%;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+#content .logo-img img {
+    width: 150px;
+    height: 150px;
+}
+
+#content .content-title {
+    margin-left: 80px;
+}
+
+#content .section-sub-heading {
+    margin: 25px 0px;
+    opacity: .6;
+    font-style: italic;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#content .course-list {
+    padding: 32px 0px;
+}
+
+.course-list .course-name {
+    margin: 15px 0;
+}
+
+.course-list .course-img {
+    border-radius: 4%;
+    width: 154px;
+    max-height: 154px;
+}
+
+#footer {
+    background-color: #000;
+}
+
+#footer .social-list {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer>.social-list>a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #757575;
+}
+
+.social-list i:hover {
+    opacity: 0.6;
+}
+
+.social-list .copyright {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.copyright a {
+    color: #757575;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 900px;
+    background: #fff;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.2;
+        transform: translateY(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal .modal-close {
+    float: right;
+    padding: 16px 15px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.modal .modal-close:hover {
+    float: right;
+    padding: 16px 15px;
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal .modal-header {
+    text-align: center;
+    font-size: 30px;
+    padding: 47px 16px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.modal .modal-body {
+    padding: 0px 16px;
+}
+
+.modal-body .modal-label {
+    margin: 15px 0px;
+    display: block;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 12px;
+}
+
+#buy-tickets {
+    background-color: #000;
+    padding: 16px;
+    margin: 16px 0px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.modal .modal-sub-close:hover,
+#buy-tickets:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal .modal-sub-close {
+    float: left;
+    padding: 11px 14px;
+    background-color: #f44336;
+    color: #fff;
+    margin: 16px 0px;
+}
+
+.modal-footer {
+    float: right;
+}
+
+.modal-footer .modal-help {
+    margin: 18px;
+}
+
+.modal-help a {
+    color: #2196F3;
+}
+
+.modalRating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+}
+
+.modalRating.open {
+    display: flex;
+}
+
+.modalRating-container {
+    width: 900px;
+    background: #fff;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.2;
+        transform: translateY(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modalRating .modalRating-close {
+    float: right;
+    padding: 16px 15px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.modalRating .modalRating-close:hover {
+    float: right;
+    padding: 16px 15px;
+    background-color: #ccc;
+    color: #000;
+}
+
+.modalRating .modalRating-header {
+    text-align: center;
+    font-size: 30px;
+    padding: 47px 16px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.modalRating .modalRating-body {
+    padding: 0px 16px;
+}
+
+.modalRating-body .modalRating-label {
+    margin: 15px 0px;
+    display: block;
+}
+
+.modalRating-body input {
+    width: 100%;
+    padding: 12px;
+}
+
+#buy-tickets {
+    background-color: #000;
+    padding: 16px;
+    margin: 16px 0px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.modalRating .modalRating-sub-close:hover,
+#buy-tickets:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modalRating .modalRating-sub-close {
+    float: left;
+    padding: 11px 14px;
+    background-color: #f44336;
+    color: #fff;
+    margin: 16px 0px;
+}
+
+.modalRating-footer {
+    float: right;
+}
+
+.modalRating-footer .modalRating-help {
+    margin: 18px;
+}
+
+.modalRating-help a {
+    color: #2196F3;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Sansita', sans-serif;
+    letter-spacing: 1px;
+    font-size: 50px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.content i {
+    color: #FFC107;
+}
+
+.content span {
+    position: relative;
+    display: inline-block;
+}
+
+.content span:before,
+.content span:after {
+    position: absolute;
+    content: "";
+    background-color: #282828;
+    width: 40px;
+    height: 2px;
+    top: 40%;
+}
+
+.content span:before {
+    left: -45px;
+}
+
+.content span:after {
+    right: -45px;
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    margin: 20px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper input {
+    border: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    opacity: 0;
+}
+
+.wrapper label {
+    position: relative;
+    float: right;
+    color: #C8C8C8;
+}
+
+.wrapper label:before {
+    margin: 5px;
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 3em;
+    color: #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.wrapper input:checked~label:before {
+    color: #FFC107;
+}
+
+.wrapper label:hover~label:before {
+    color: #ffdb70;
+}
+
+.wrapper label:hover:before {
+    color: #FFC107;
+}

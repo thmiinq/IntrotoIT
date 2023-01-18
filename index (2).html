@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Rating Form - RMIT Alone</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/be96557856.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="nav-btn"><a href="#footer">About</a></div>
+            <div class="nav-btn"><a href="#footer">Contact</a></div>
+            <div class="nav-btn js-buy-ticket"><a href="#">Sign In</a></div>
+
+            <div class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div id="mobile-menu" class="hide mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="band" class="content-section">
+                <div class="row">
+                    <div class="col col-third logo-img">
+                        <img src="./assets/img/logo.jpg" alt="">
+                    </div>
+                    <div class="col content-title">
+                        <h2 class="text-center mt-10 section-heading">RATING FORM</h2>
+                        <p class="text-center section-sub-heading">VOTE 5 STARS</p>
+                    </div>
+                </div>
+                <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+
+                <div class="row course-list">
+                    <div class="col col-third s-col-full text-center course-menu">
+                        <img class="course-img" src="./assets/img/icon1.jpg" alt="">
+                    </div>
+
+                    <div class=" col col-third s-col-full text-center course-menu">
+                        <p class="course-name bold">Introduction Of Programing</p>
+                        <p class="course-teacher">By: Ha Huy Hoang</p>
+                    </div>
+
+                    <div class="col col-third s-col-full text-center course-menu">
+                        <button class="course-name bold btn js-rating">Rating</button>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <div class="row course-list">
+                    <div class="col col-third s-col-full text-center course-menu">
+                        <img class="course-img" src="./assets/img/icon2.jpg" alt="">
+                    </div>
+
+                    <div class=" col col-third s-col-full text-center course-menu">
+                        <p class="course-name bold">Introduction Of IT</p>
+                        <p class="course-teacher">By: Nguyen Hoang Bao Vinh</p>
+                    </div>
+
+                    <div class="col col-third s-col-full text-center course-menu">
+                        <button class="course-name bold btn js-rating">Rating</button>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+
+                <div class="row course-list">
+                    <div class="col col-third s-col-full text-center member-menu">
+                        <img class="course-img" src="./assets/img/icon3.jpg" alt="">
+                    </div>
+
+                    <div class=" col col-third s-col-full text-center member-menu">
+                        <p class="course-name bold">Introduction Of Business</p>
+                        <p class="course-teacher">By: Tran Hoang Nhat</p>
+                    </div>
+
+                    <div class="col col-third s-col-full text-center member-menu">
+                        <button class="course-name bold btn js-rating">Rating</button>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <header class="modal-header">
+                        <i class="fa-solid fa-suitcase"></i>
+                        Welcome
+                    </header>
+
+                    <div class="modal-body">
+                        <label for="ticket-quantity" class="modal-label">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Username
+                        </label>
+                        <input type="password" class="border" name="" placeholder="sid@rmit.edu.vn" id="">
+                        <label for="ticket-email" class="modal-label">
+                            <i class="fa-solid fa-user"></i>
+                            Password
+                        </label>
+                        <input type="text" class="border" name="" placeholder="" id="">
+                        <div id="buy-tickets" class="text-center bold js-modal-close">
+                            SIGN IN
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <p class="modal-help">Don't have an account? <a href="">Register</a> for an account.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modalRating js-modalRating">
+                <div class="modalRating-container js-modalRating-container">
+                    <div class="modalRating-close js-modalRating-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <header class="modalRating-header">
+                        <i class="fa fa-star"></i>
+                        RATING
+                    </header>
+
+                    <div class="modalRating-body">
+                        <label for="ticket-quantity" class="modalRating-label">
+                            <div class="modalRating-label">
+                                <i class="fa-solid fa-comment"></i>
+                                Comment
+                            </div>
+
+                            <input type="text" class="border" name="" placeholder="Write your comment here!" id="">
+                            <label for="ticket-email" class="modalRating-label">
+                                <i class="fa-solid fa-user"></i>
+                                Rate
+                            </label>
+                            <div class="wrapper">
+                                <input type="checkbox" id="st1" value="1" />
+                                <label for="st1"></label>
+                                <input type="checkbox" id="st2" value="2" />
+                                <label for="st2"></label>
+                                <input type="checkbox" id="st3" value="3" />
+                                <label for="st3"></label>
+                                <input type="checkbox" id="st4" value="4" />
+                                <label for="st4"></label>
+                                <input type="checkbox" id="st5" value="5" />
+                                <label for="st5"></label>
+                            </div>
+                            <div class="submit-btn js-modalRating-close">
+                                <button id="buy-tickets" class="bold">
+                                    Submit
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="footer">
+                <div class="social-list">
+                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <div class="copyright">
+                        <p>Powered by <a href="">RA</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            const buyBtns = document.querySelectorAll('.js-buy-ticket')
+            const buyRatingBtns = document.querySelectorAll('.js-rating')
+            const modal = document.querySelector('.js-modal')
+            const modalRating = document.querySelector('.js-modalRating')
+            const modalClose = document.querySelector('.js-modal-close')
+            const modalRatingClose = document.querySelector('.js-modalRating-close')
+            const modalContainer = document.querySelector('.js-modal-container')
+            const modalRatingContainer = document.querySelector('.js-modalRating-container')
+
+            /* BEGIN BUY TICKETS MODAL */
+            function hideBuyTickets1() {
+                modal.classList.remove('open')
+            }
+
+            function showBuyTickets1() {
+                modal.classList.add('open')
+            }
+
+            modalClose.addEventListener('click', hideBuyTickets1)
+
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showBuyTickets1)
+            }
+
+            modal.addEventListener('click', hideBuyTickets1)
+            modalContainer.addEventListener('click', function (event) {
+                event.stopPropagation();
+            })
+
+            /* RATING SSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
+            function hideBuyTickets2() {
+                modalRating.classList.remove('open')
+            }
+
+            function showBuyTickets2() {
+                modalRating.classList.add('open')
+            }
+
+            modalRatingClose.addEventListener('click', hideBuyTickets2)
+
+            for (const buyRatingBtn of buyRatingBtns) {
+                buyRatingBtn.addEventListener('click', showBuyTickets2)
+            }
+
+            modalRating.addEventListener('click', hideBuyTickets2)
+            modalRatingContainer.addEventListener('click', function (event) {
+                event.stopPropagation();
+            })
+            /* END BUY TICKETS MODAL */
+
+
+            var header = document.getElementById('header')
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+
+            // Đóng/mở mobile menu
+            mobileMenu.onclick = function () {
+                var isClosed = header.clientHeight === headerHeight;
+                if (isClosed) {
+                    header.style.height = 'auto';
+                } else {
+                    header.style.height = null;
+                }
+            }
+
+            // Tự động đóng khi chọn menu
+            var menuItems = document.querySelectorAll('#header .nav-btn a[href*="#"]')
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function (event) {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if (isParentMenu) {
+                        event.preventDefault();
+                    } else {
+                        header.style.height = null;
+                    }
+                }
+            }
+        </script>
+
+</body>
+
+</html>
